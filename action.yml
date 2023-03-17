@@ -1,0 +1,41 @@
+name: 'endoflife-date/supported-versions'
+description: 'Get list of supported versions for a product using information from endoflife.date API'
+inputs:
+  product:
+    description: 'Product ID. Same as the page URL on the endoflife.date website.'
+    required: true
+  is-actively-supported:
+    description: 'Pick release cycles which are actively supported (support: true or set to a future date in the API)'
+    default: false
+  is-not-eol:
+    description: 'Pick release cycles that have not yet reached EoL (eol: false, or set to a future date in the API)'
+    default: false
+  is-lts:
+    description: 'Return only LTS releases (lts: true, or lts set to a date in the past)'
+    default: false
+  is-extended-support:
+    description: 'Return releases with valid extended support'
+    default: false
+outputs:
+  release-cycles-list:
+    description: A list of filtered release cycles.
+  latest-versions:
+    description: A list of latest versions for the filtered release cycles.
+  metadata:
+    description: Complete product metadata, as per the v1 API.
+  matched-cycles:
+    description: A list of release cycles that matched the applied filters, with complete API response against the `cycles` field
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - '"--product"
+    - ${{ inputs.product }}
+    - "--is-supported"
+    - ${{ inputs.is-supported }}
+    - "--is-not-eol"
+    - ${{ inputs.is-not-eol }}
+    - "--is-lts"
+    - ${{ inputs.is-lts }}
+    - "--is-extended-support"
+    - ${{ inputs.is-extended-support }}'
