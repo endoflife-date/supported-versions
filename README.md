@@ -174,7 +174,7 @@ with:
 ```json5
 "release-cycles-list": ["3.11", "3.10", "3.9", "3.8"]
 "latest-versions": ["3.11.2", "3.10.10", "3.9.16", "3.8.16", "3.7.16"]
-# Same as the content of the URL, not the URL itself
+// Same as the content of the URL, not the URL itself
 "metadata": "https://deploy-preview-2080--endoflife-date.netlify.app/api/v1/products/python/"
 "cycles": [
   {
@@ -277,7 +277,7 @@ with:
 ```json5
 "release-cycles-list": ["18", "16", "14"]
 "latest-versions": ["18.15.0", "16.19.1", "14.21.3"]
-# Same as the content of the URL, not the URL itself
+// Same as the content of the URL, not the URL itself
 "metadata": "https://deploy-preview-2080--endoflife-date.netlify.app/api/v1/products/nodejs/"
 ```
 
@@ -295,7 +295,7 @@ with:
 ```json5
 "release-cycles-list": ["8.2", "8.1"]
 "latest-versions": ["8.2.4", "8.1.17"]
-# Same as the content of the URL, not the URL itself
+// Same as the content of the URL, not the URL itself
 "metadata": "https://deploy-preview-2080--endoflife-date.netlify.app/api/v1/products/php/"
 ```
 
@@ -314,7 +314,7 @@ with:
 ```json5
 "release-cycles-list": ["1.26", "1.25", "1.24"]
 "latest-versions": ["1.26.2", "1.25.7", "1.24.11"]
-# Same as the content of the URL, not the URL itself
+// Same as the content of the URL, not the URL itself
 "metadata": "https://deploy-preview-2080--endoflife-date.netlify.app/api/v1/products/python/"
 ```
 
@@ -333,6 +333,6 @@ with:
 ```json5
 "release-cycles-list": ["9", "8", "7", "6"]
 "latest-versions": ["9.1", "8.7", "7.9", "6.10"]
-# Same as the content of the URL, not the URL itself
+// Same as the content of the URL, not the URL itself
 "metadata": "https://deploy-preview-2080--endoflife-date.netlify.app/api/v1/products/rhel/"
 ```
