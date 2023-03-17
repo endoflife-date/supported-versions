@@ -1,5 +1,7 @@
 # endoflife-date/supported-versions
 
+**⚠️: This action is currently WIP and does not work. Feedback is welcome [on this discussion](https://github.com/endoflife-date/endoflife.date/discussions/2700)**
+
 This action returns a list of supported versions for a product (such as php/ruby/python/etc)
 using the [endoflife.date](https://endoflife.date) [API](https://endoflife.date/docs/api).
 
